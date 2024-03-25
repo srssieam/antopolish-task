@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+
+/* header starts from here */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 25px 0px;
+}
+
+.logo-title {
+    font-family: "Praise", cursive;
+    font-weight: 400;
+    color: #F72D57;
+    font-size: 48px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: #3F3F3F;
+    gap: 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3F3F3F;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #F72D57;
+    color: #F72D57;
+}
+
+.cart-icon {
+    font-size: 35px;
+    padding: 0;
+}
+
+
+.btn {
+    padding: 10px 15px;
+    background: #F72D57;
+    color: #FFF;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* header ends here */
