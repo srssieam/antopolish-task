@@ -2,7 +2,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./headerStyle.css"
 const Navbar = () => {
     return (
-        <header>
+        <div className="header">
             <div>
                 <h1 className="logo-title">Taste now</h1>
             </div>
@@ -20,7 +20,7 @@ const Navbar = () => {
               
                 <button className="btn">sign up</button>
             </nav>
-        </header>
+        </div>
     );
 };
 
