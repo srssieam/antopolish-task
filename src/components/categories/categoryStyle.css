@@ -1,6 +1,33 @@
 .category-heading {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     margin-top: 70px;
 }
+
+  
+  .custom-tab-list {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    list-style-type: none;
+    column-gap: 10px;
+  }
+  
+  .custom-tab {
+    font-size: 24px;
+    border-radius: 7px;
+    padding: 10px 0px;
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+
+  .custom-tab.active {
+    background-color: #F72D57;
+    color: white;
+    border-radius: 7px;
+    
+  }
+  
