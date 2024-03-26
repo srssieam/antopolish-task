@@ -43,3 +43,9 @@ header {
 .btn:hover {
   scale: calc(1.1);
 }
+
+@media screen and (max-width:1024px) {
+  .container{
+    padding: 0 24px;
+  }
+}
