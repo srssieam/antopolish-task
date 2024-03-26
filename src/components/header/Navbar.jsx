@@ -1,15 +1,28 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { FaXmark } from "react-icons/fa6";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import styles from "./headerStyle.module.css"
+import { useState } from "react";
 const Navbar = () => {
     const pathName = window.location.pathname;
     // console.log(pathName)
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <div className={`${styles.header}`}>
             <div className={`${styles.row} container`}>
-                <div>
-                    <h1 className={styles.logoTitle}>Taste now</h1>
+                <div className={`${styles.logoTitle} ${isOpen === true ? styles.hidden : ""}`}>
+                    <HiOutlineMenuAlt2 onClick={() => setIsOpen(true)} className={styles.barIcon} />
+                    <h1 >Taste now</h1>
                 </div>
-                <nav>
+                <div>
+                    <a href="/cart" className={`${styles.cartButton} ${isOpen === true ? styles.hidden : ""}`}><AiOutlineShoppingCart className={styles.cartIcon} /></a>
+                </div>
+                <div className={`${styles.navbar} ${isOpen === true ? styles.open : ""}`}>
+                    <FaXmark onClick={() => setIsOpen(false)} className={`${styles.crossIcon}`} />
+                    <div>
+                        <h1 >Taste now</h1>
+                    </div>
                     <nav>
                         <ul>
                             <li><a href="/" className={`${pathName === "/" ? styles.active : ""}`}>Home</a></li>
@@ -19,10 +32,10 @@ const Navbar = () => {
                             <li><a href="/cart" className={`${pathName === "/cart" ? styles.active : ""}`}><AiOutlineShoppingCart className={styles.cartIcon} /></a></li>
                         </ul>
                     </nav>
-
                     <button className="btn">sign up</button>
-                </nav>
+                </div>
             </div>
+
         </div>
     );
 };

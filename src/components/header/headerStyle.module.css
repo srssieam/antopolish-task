@@ -1,7 +1,6 @@
-
 /* header starts from here */
 .header {
-    width:100%;
+    width: 100%;
     background-color: transparent;
     backdrop-filter: blur(10px);
 }
@@ -14,14 +13,14 @@
     padding: 25px 0px;
 }
 
-.logoTitle {
+.logoTitle h1 {
     font-family: "Praise", cursive;
     font-weight: 400;
     color: #F72D57;
     font-size: 48px;
 }
 
-nav {
+.navbar {
     display: flex;
     align-items: center;
     gap: 35px;
@@ -54,5 +53,123 @@ nav ul li a:hover {
     padding: 0;
 }
 
+.crossIcon,
+.barIcon, .navbar div, .cartButton {
+    display: none;
+}
 
-/* header ends here */
+
+
+@media screen and (max-width:768px) {
+
+    .row {
+        padding: 0px;
+    }
+
+    .logoTitle {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cartButton {
+        display: block;
+        color: #3F3F3F;
+    }
+
+    .barIcon {
+        display: block;
+        font-size: 35px;
+    }
+
+    .navbar {
+        display: none;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .navbar div {
+        display: block;
+        color: white;
+        font-size:30px;
+        padding: 40px;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+
+    .navbar div h1 {
+        font-family: "Praise", cursive;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .navbar button {
+        background-color: white;
+        color: #F72D57;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .open {
+        display: flex;
+        background-color: #F72D57;
+        min-height: 100vh;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+    }
+
+    nav ul li:last-child {
+        display: none;
+    }
+
+    nav ul li a {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    .active {
+        border-bottom: none;
+        color: white;
+        font-weight: 600;
+    }
+
+    .crossIcon {
+        display: block;
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+
+
+
+    /* 
+
+    .row{
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+
+    
+
+    
+    
+    
+    .cartIcon {
+        display: none;
+    }
+
+      */
+}
