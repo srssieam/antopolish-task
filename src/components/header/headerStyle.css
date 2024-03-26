@@ -8,6 +8,8 @@
     align-items: center;
     font-size: 20px;
     padding: 25px 0px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 
 .logo-title {
@@ -40,7 +42,7 @@ nav ul li a:hover {
     color: #F72D57;
 }
 
-.nav-active {
+.active {
     border-bottom: 3px solid #F72D57;
     color: #F72D57;
 }
@@ -52,7 +54,7 @@ nav ul li a:hover {
 
 
 .btn {
-    padding: 10px 15px;
+    padding: 10px 30px;
     background: #F72D57;
     color: #FFF;
     border-radius: 8px;
@@ -60,6 +62,8 @@ nav ul li a:hover {
     font-size: 20px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .btn:hover {

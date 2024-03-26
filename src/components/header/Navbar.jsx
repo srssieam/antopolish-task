@@ -11,11 +11,11 @@ const Navbar = () => {
             <nav>
                 <nav>
                     <ul>
-                        <li><a href="/" className={`${pathName === "/" ? "nav-active":""}`}>Home</a></li>
-                        <li><a href="/about-us">About us</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/contact">Contact us</a></li>
-                        <li><a href="/cart"><AiOutlineShoppingCart className="cart-icon" /></a></li>
+                        <li><a href="/" className={`${pathName === "/" ? "active":""}`}>Home</a></li>
+                        <li><a href="/about-us" className={`${pathName === "/about-us" ? "active":""}`}>About us</a></li>
+                        <li><a href="/blog" className={`${pathName === "/blog" ? "active":""}`}>Blog</a></li>
+                        <li><a href="/contact" className={`${pathName === "/contact" ? "active":""}`}>Contact us</a></li>
+                        <li><a href="/cart" className={`${pathName === "/cart" ? "active":""}`}><AiOutlineShoppingCart className="cart-icon" /></a></li>
                     </ul>
                 </nav>
               

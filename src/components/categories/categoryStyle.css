@@ -1,33 +1,101 @@
+/* category heading */
 .category-heading {
-    font-size: 48px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 70px;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 70px;
 }
 
-  
-  .custom-tab-list {
-    margin-top: 24px;
-    margin-bottom: 12px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    text-align: center;
-    list-style-type: none;
-    column-gap: 10px;
-  }
-  
-  .custom-tab {
-    font-size: 24px;
-    border-radius: 7px;
-    padding: 10px 0px;
-    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
-  }
+/* ---------tab related styles starts---------- */
+/* ---------tab related styles starts---------- */
+.custom-tab-list {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style-type: none;
+  column-gap: 10px;
+}
 
-  .custom-tab.active {
-    background-color: #F72D57;
-    color: white;
-    border-radius: 7px;
-    
-  }
-  
+.custom-tab {
+  font-size: 24px;
+  border-radius: 7px;
+  padding: 15px 0px;
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-icons {
+  font-size: 30px;
+}
+
+.custom-tab.active {
+  background-color: #F72D57;
+  color: white;
+  border-radius: 7px;
+
+}
+/* ---------tab related styles ends---------- */
+/* ---------tab related styles ends---------- */
+
+
+
+/* ---------food Card related styles starts---------- */
+/* ---------food Card related styles starts---------- */
+
+.foodCard {
+  padding: 24px;
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  margin: 5px 0;
+  border-radius: 8px;
+  position: relative;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding:30px 20px;
+}
+.image-container img{
+  width: 100%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body p:nth-child(2) {
+  font-size: 13px;
+  font-weight: 300;
+}
+.card-body p:last-child {
+  font-weight: 500;
+  font-size: 13px;
+}
+.card-body button {
+  margin-top: 25px;
+}
+/* ---------food Card related styles ends---------- */
+/* ---------food Card related styles ends---------- */
+.ribbon {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  width: 40px;
+  font-size: 14px;
+  height: 50px;
+  background-color: rgba(255, 166, 0, 0.527);
+  clip-path: polygon(21% 0, 81% 0, 99% 100%, 50% 78%, 0 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}

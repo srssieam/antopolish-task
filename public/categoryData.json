@@ -1,0 +1,186 @@
+
+    {
+        "pizzas": [
+            {
+                "itemName":"Pepperoni Pizza",
+                "rating": 4.5,
+                "image":"https://i.ibb.co/m0N1dWD/pizza1.png",
+                "chef": "Di napoles",
+                "price" :11.99
+            },
+            {
+                "itemName": "Margherita Pizza",
+                "rating": 5,
+                "image": "https://i.ibb.co/thdtXN9/pizza2.png",
+                "chef": "Giovanni Rossi",
+                "price": 9.99
+            },
+            {
+                "itemName": "Vegetarian Pizza",
+                "rating": 4.3,
+                "image": "https://i.ibb.co/wgMVKrH/pizza4.png",
+                "chef": "Isabella Bianchi",
+                "price": 10.99
+            },
+            {
+                "itemName": "Hawaiian Pizza",
+                "rating": 4.0,
+                "image": "https://i.ibb.co/j8zCWkY/pizza3.png",
+                "chef": "Luigi Russo",
+                "price": 12.99
+            },
+            {
+                "itemName": "Mushroom Pizza",
+                "rating": 4.4,
+                "image": "https://i.ibb.co/jTfT9JV/pizza5.png",
+                "chef": "Rosa De Luca",
+                "price": 11.49
+            },
+            {
+                "itemName": "BBQ Chicken Pizza",
+                "rating": 4.6,
+                "image": "https://i.ibb.co/thdtXN9/pizza2.png",
+                "chef": "Antonio Ferrari",
+                "price": 13.49
+            },
+            {
+                "itemName": "Spinach and Feta Pizza",
+                "rating": 4.1,
+                "image": "https://i.ibb.co/C137jct/pizza7.png",
+                "chef": "Maria Conti",
+                "price": 10.49
+            }
+        ],
+        "burgers": [
+            {
+                "itemName": "Classic Cheeseburger",
+                "rating": 4.7,
+                "image": "https://i.ibb.co/4m0KmK2/buger1.png",
+                "chef": "John Smith",
+                "price": 8.99
+            },
+            {
+                "itemName": "Bacon Avocado Burger",
+                "rating": 4.5,
+                "image": "https://i.ibb.co/gyqw1dr/burger2.png",
+                "chef": "Emily Johnson",
+                "price": 10.49
+            },
+            {
+                "itemName": "Mushroom Swiss Burger",
+                "rating": 4.3,
+                "image": "https://i.ibb.co/1z95BLr/burger3.png",
+                "chef": "Michael Brown",
+                "price": 9.99
+            },
+            {
+                "itemName": "BBQ Bacon Burger",
+                "rating": 4.6,
+                "image": "https://i.ibb.co/r22DHsv/burger4.png",
+                "chef": "Sarah Davis",
+                "price": 11.99
+            },
+            {
+                "itemName": "Veggie Burger",
+                "rating": 4.2,
+                "image": "https://i.ibb.co/4K70f2G/burger5.png",
+                "chef": "Jessica Lee",
+                "price": 9.49
+            },
+            {
+                "itemName": "Double Patty Burger",
+                "rating": 4.8,
+                "image": "https://i.ibb.co/StYnPs8/burger6.png",
+                "chef": "David Wilson",
+                "price": 12.99
+            }
+        ],
+        "salads": [
+            {
+              "itemName": "Caesar Salad",
+              "rating": 4.7,
+              "image": "https://i.ibb.co/qYWzWFk/salad1.png",
+              "chef": "Giovanni",
+              "price": 8.99
+            },
+            {
+              "itemName": "Greek Salad",
+              "rating": 4.5,
+              "image": "https://i.ibb.co/Zg8JD9r/salad2.png",
+              "chef": "Maria",
+              "price": 9.49
+            },
+            {
+              "itemName": "Caprese Salad",
+              "rating": 4.8,
+              "image": "https://i.ibb.co/ZSrG1xR/salad3.png",
+              "chef": "Antonio",
+              "price": 10.99
+            },
+            {
+              "itemName": "Cobb Salad",
+              "rating": 4.6,
+              "image": "https://i.ibb.co/Yh47Nmf/salad4.png",
+              "chef": "Sofia",
+              "price": 11.49
+            },
+            {
+              "itemName": "Spinach Salad",
+              "rating": 4.3,
+              "image": "https://i.ibb.co/0BfJ1Wf/salad5.png",
+              "chef": "Lucas",
+              "price": 9.99
+            },
+            {
+              "itemName": "Mediterranean Salad",
+              "rating": 4.2,
+              "image": "https://i.ibb.co/Sx4Vy8W/salad6.png",
+              "chef": "Emma",
+              "price": 10.49
+            }
+          ],
+          "combos": [
+            {
+              "comboName": "Family Combo",
+              "rating": 4.7,
+              "image": "https://i.ibb.co/61Mvj8y/combo1.png",
+              "chef": "Chef Giovanni",
+              "price": 29.99
+            },
+            {
+              "comboName": "Party Combo",
+              "rating": 4.5,
+              "image": "https://i.ibb.co/HNhWTBr/combo3.png",
+              "chef": "Chef Maria",
+              "price": 39.99
+            },
+            {
+              "comboName": "Lunch Combo",
+              "rating": 4.3,
+              "image": "https://i.ibb.co/cQcNx0Y/combo4.png",
+              "chef": "Chef Antonio",
+              "price": 14.99
+            },
+            {
+              "comboName": "Deluxe Combo",
+              "rating": 4.8,
+              "image": "https://i.ibb.co/4JT0SVZ/combo5.png",
+              "chef": "Chef Sofia",
+              "price": 34.99
+            },
+            {
+              "comboName": "Supreme Combo",
+              "rating": 4.6,
+              "image": "https://i.ibb.co/3cwsnHq/combo6.png",
+              "chef": "Chef Luca",
+              "price": 27.99
+            },
+            {
+              "comboName": "Vegetarian Combo",
+              "rating": 4.4,
+              "image": "https://i.ibb.co/Gx8ZmdV/combo2.png",
+              "chef": "Chef Emma",
+              "price": 19.99
+            }
+          ]
+    }
