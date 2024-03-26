@@ -1,8 +1,7 @@
-/* header starts from here */
+
 .header {
     width: 100%;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
+    background-color: white;
 }
 
 .row {
@@ -59,8 +58,14 @@ nav ul li a:hover {
 }
 
 
-
+/* small to medium screen */
 @media screen and (max-width:768px) {
+
+    .header {
+        width: 100%;
+        background-color: white;
+        backdrop-filter: none;
+    }
 
     .row {
         padding: 0px;
@@ -70,16 +75,26 @@ nav ul li a:hover {
         display: flex;
         align-items: center;
         gap: 20px;
+        padding: 20px 0px;
     }
+
+    .logoTitle h1{
+        font-size: 30px;
+    }
+
 
     .cartButton {
         display: block;
         color: #3F3F3F;
     }
 
+    .cartIcon {
+        font-size: 24px;
+    }
+
     .barIcon {
         display: block;
-        font-size: 35px;
+        font-size: 24px;
     }
 
     .navbar {
@@ -94,7 +109,7 @@ nav ul li a:hover {
         display: block;
         color: white;
         font-size:30px;
-        padding: 40px;
+        padding: 55px;
         width: 100%;
         border-bottom: 1px solid white;
     }
@@ -103,6 +118,7 @@ nav ul li a:hover {
         font-family: "Praise", cursive;
         font-weight: 400;
         text-align: center;
+        font-size: 35px;
     }
 
     .navbar button {
@@ -152,4 +168,10 @@ nav ul li a:hover {
         font-size: 30px;
     }
 
+}
+
+@media screen and (max-width:1270px) {
+    .padding {
+        padding: 0 24px;
+    }
 }

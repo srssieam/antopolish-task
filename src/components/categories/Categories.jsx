@@ -24,15 +24,19 @@ const Categories = () => {
     // console.log(categoryData)
     return (
         <div>
-            <h1 className="commonHeading"  style={{textAlign:"center"}}>Our Popular <span className="common-pink">Categories</span></h1>
+            <h1 className="commonHeading center"  style={{textAlign:"center"}}>Our Popular <span className="common-pink">Categories</span></h1>
             <div className={styles.customTabsContainer}>
+
                 <Tabs className={styles.customTabs} selectedIndex={activeTab} onSelect={index => setActiveTab(index)}>
+
+                    {/* tab buttons */}
                     <TabList className={styles.customTabList}>
                         <Tab className={`${styles.customTab} ${activeTab === 0 ? styles.active : ""}`}><IoPizzaOutline className="tab-icons" /> Pizzas</Tab>
                         <Tab className={`${styles.customTab} ${activeTab === 1 ? styles.active : ""}`}><PiHamburger className="tab-icons" /> Burgers</Tab>
                         <Tab className={`${styles.customTab} ${activeTab === 2 ? styles.active : ""}`}><LuSalad className="tab-icons" /> Salads</Tab>
                         <Tab className={`${styles.customTab} ${activeTab === 3 ? styles.active : ""}`}><IoFastFoodOutline className="tab-icons" /> Combos</Tab>
-`                    </TabList>`
+`                    </TabList>
+
                     {/* pizza category */}
                     <TabPanel>
                         <Category styles={styles} foodItem={categoryData.pizzas} />

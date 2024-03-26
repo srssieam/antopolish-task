@@ -5,24 +5,34 @@ import styles from "./headerStyle.module.css"
 import { useState } from "react";
 const Navbar = () => {
     const pathName = window.location.pathname;
-    // console.log(pathName)
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className={`${styles.header}`}>
+        <div className={`${styles.header} ${isOpen=== false? styles.padding :""}`}>
             <div className={`${styles.row} container`}>
+
+                {/* navbar leftSide */}
                 <div className={`${styles.logoTitle} ${isOpen === true ? styles.hidden : ""}`}>
+                    {/* menu bar for medium and small device */}
                     <HiOutlineMenuAlt2 onClick={() => setIsOpen(true)} className={styles.barIcon} />
                     <h1 >Taste now</h1>
                 </div>
                 <div>
                     <a href="/cart" className={`${styles.cartButton} ${isOpen === true ? styles.hidden : ""}`}><AiOutlineShoppingCart className={styles.cartIcon} /></a>
                 </div>
+
+                {/* navbar right side */}
                 <div className={`${styles.navbar} ${isOpen === true ? styles.open : ""}`}>
+
+                    {/* crossbar for small device*/}
                     <FaXmark onClick={() => setIsOpen(false)} className={`${styles.crossIcon}`} />
+
+                    {/* navbar heading for small device */}
                     <div>
                         <h1 >Taste now</h1>
                     </div>
+
+                    {/* nav menus */}
                     <nav>
                         <ul>
                             <li><a href="/" className={`${pathName === "/" ? styles.active : ""}`}>Home</a></li>

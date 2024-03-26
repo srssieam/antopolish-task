@@ -54,7 +54,7 @@
     }
     .bannerBody {
         flex-direction: column;
-        height: 100vh;
+        height: auto;
         position: relative;
     }
 
@@ -63,15 +63,10 @@
     }
     
     .bannerRight {
-        max-width: 70%;
+        max-width: 100%;
     }
 
     .bottomImage {
-        z-index: -1;
-        position: absolute;
-        rotate: 240deg;
-        width: 50%;
-        right: 150px;
-        bottom: 0%;
+        display: none;
     }
 }

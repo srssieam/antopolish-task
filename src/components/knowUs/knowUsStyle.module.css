@@ -1,10 +1,15 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 100px;
     margin-top: 24px;
 }
 
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+}
 
 .leftSide img {
     width: 100%;
@@ -15,4 +20,31 @@
     text-align: justify;
     font-weight: 300;
     font-size: 16px;
+}
+
+.rightSide h2 {
+    font-size: 36px;
+}
+
+@media screen and (max-width:768px) {
+
+    .container {
+        grid-gap: 24px;
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+    }
+
+    .rightSide h2 {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
 }

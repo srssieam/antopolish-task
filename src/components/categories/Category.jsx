@@ -59,8 +59,6 @@ const Category = ({ foodItem, styles }) => {
                             <MdOutlineStarPurple500 />
                             <p>{item.rating}</p>
                             </div>
-
-
                     </SwiperSlide>
                 ))
             }

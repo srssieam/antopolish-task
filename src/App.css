@@ -44,7 +44,21 @@ header {
   scale: calc(1.1);
 }
 
+/* for medium-large screen */
 @media screen and (max-width:1024px) {
+  .commonHeading {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .center{
+    text-align: center;
+  }
+  .banner-curveBg{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1270px) {
   .container{
     padding: 0 24px;
   }
