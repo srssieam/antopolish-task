@@ -24,7 +24,7 @@ const Categories = () => {
     // console.log(categoryData)
     return (
         <div>
-            <h1 className="commonHeading">Our Popular <span className="common-pink">Categories</span></h1>
+            <h1 className="commonHeading"  style={{textAlign:"center"}}>Our Popular <span className="common-pink">Categories</span></h1>
             <div className={styles.customTabsContainer}>
                 <Tabs className={styles.customTabs} selectedIndex={activeTab} onSelect={index => setActiveTab(index)}>
                     <TabList className={styles.customTabList}>
