@@ -91,3 +91,14 @@
   align-items: center;
   padding-bottom: 5px;
 }
+
+@media screen and (max-width:768px) {
+  .customTabList {
+    margin-top: 24px;
+    margin-bottom: -40px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    list-style-type: none;
+    grid-gap: 15px;
+  }
+}
