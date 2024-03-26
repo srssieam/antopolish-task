@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./categoryStyle.css"
+import styles from "./CategoryStyle.module.css"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
@@ -21,37 +21,36 @@ const Categories = () => {
             .then((data) => setCategoryData(data));
     }, [])
 
-    console.log(categoryData)
+    // console.log(categoryData)
     return (
         <div>
-            <h1 className="category-heading">Our Popular <span className="common-pink">Categories</span></h1>
-            <div className="custom-tabs-container">
-                <Tabs className="custom-tabs" selectedIndex={activeTab} onSelect={index => setActiveTab(index)}>
-                    <TabList className="custom-tab-list">
-                        <Tab className={`custom-tab ${activeTab === 0 ? "custom-tab active" : ""}`}><IoPizzaOutline className="tab-icons" /> Pizzas</Tab>
-                        <Tab className={`custom-tab ${activeTab === 1 ? "custom-tab active" : ""}`}><PiHamburger className="tab-icons" /> Burgers</Tab>
-                        <Tab className={`custom-tab ${activeTab === 2 ? "custom-tab active" : ""}`}><LuSalad className="tab-icons" /> Salads</Tab>
-                        <Tab className={`custom-tab ${activeTab === 3 ? "custom-tab active" : ""}`}><IoFastFoodOutline className="tab-icons" /> Combos</Tab>
-                    </TabList>
-
+            <h1 className="commonHeading">Our Popular <span className="common-pink">Categories</span></h1>
+            <div className={styles.customTabsContainer}>
+                <Tabs className={styles.customTabs} selectedIndex={activeTab} onSelect={index => setActiveTab(index)}>
+                    <TabList className={styles.customTabList}>
+                        <Tab className={`${styles.customTab} ${activeTab === 0 ? styles.active : ""}`}><IoPizzaOutline className="tab-icons" /> Pizzas</Tab>
+                        <Tab className={`${styles.customTab} ${activeTab === 1 ? styles.active : ""}`}><PiHamburger className="tab-icons" /> Burgers</Tab>
+                        <Tab className={`${styles.customTab} ${activeTab === 2 ? styles.active : ""}`}><LuSalad className="tab-icons" /> Salads</Tab>
+                        <Tab className={`${styles.customTab} ${activeTab === 3 ? styles.active : ""}`}><IoFastFoodOutline className="tab-icons" /> Combos</Tab>
+`                    </TabList>`
                     {/* pizza category */}
                     <TabPanel>
-                        <Category foodItem={categoryData.pizzas} />
+                        <Category styles={styles} foodItem={categoryData.pizzas} />
                     </TabPanel>
 
                     {/* burger category */}
                     <TabPanel>
-                        <Category foodItem={categoryData.burgers} />
+                        <Category styles={styles} foodItem={categoryData.burgers} />
                     </TabPanel>
 
                     {/* salad category */}
                     <TabPanel>
-                        <Category foodItem={categoryData.salads} />
+                        <Category styles={styles} foodItem={categoryData.salads} />
                     </TabPanel>
 
                     {/* combos */}
                     <TabPanel>
-                        <Category foodItem={categoryData.combos} />
+                        <Category styles={styles} foodItem={categoryData.combos} />
                     </TabPanel>
                 </Tabs>
             </div>

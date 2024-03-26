@@ -1,13 +1,13 @@
-.banner-title {
+.bannerTitle {
     font-size: 48px;
     font-weight: 700;
 }
 
-.banner-desc {
+.bannerDesc {
     margin-top: 25px;
 }
 
-.banner-body {
+.bannerBody {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,21 +16,21 @@
 }
 
 
-.banner-left {
+.bannerLeft {
     max-width: 45%;
 }
 
-.banner-right {
+.bannerRight {
     max-width: 55%;
     overflow: hidden;
 }
 
-.banner-right .top-image {
+.bannerRight .topImage {
     rotate: 60deg;
     width: 100%;
 }
 
-.bottom-image {
+.bottomImage {
     z-index: -1;
     position: absolute;
     rotate: 240deg;

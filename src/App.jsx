@@ -3,6 +3,7 @@ import './App.css'
 import Banner from './components/banner/Banner'
 import Categories from './components/categories/Categories'
 import Navbar from './components/header/Navbar'
+import KnowUs from './components/knowUs/KnowUs'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <header>
         <Navbar />
       </header>
+      
       <main>
         <section>
           <Banner />
@@ -18,6 +20,9 @@ function App() {
         </section>
         <section>
           <Categories />
+        </section>
+        <section>
+          <KnowUs />
         </section>
       </main>
 

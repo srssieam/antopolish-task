@@ -1,24 +1,18 @@
-/* category heading */
-.category-heading {
-  font-size: 48px;
-  font-weight: 600;
-  text-align: center;
-  margin-top: 70px;
-}
 
 /* ---------tab related styles starts---------- */
 /* ---------tab related styles starts---------- */
-.custom-tab-list {
+.customTabList {
   margin-top: 24px;
-  margin-bottom: 12px;
+  margin-bottom: -40px;
   display: grid;
   grid-template-columns: auto auto auto auto;
   list-style-type: none;
   column-gap: 10px;
 }
 
-.custom-tab {
+.customTab {
   font-size: 24px;
+  color: #F72D57;
   border-radius: 7px;
   padding: 15px 0px;
   box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
@@ -33,11 +27,10 @@
   font-size: 30px;
 }
 
-.custom-tab.active {
+.customTab.active {
   background-color: #F72D57;
   color: white;
   border-radius: 7px;
-
 }
 /* ---------tab related styles ends---------- */
 /* ---------tab related styles ends---------- */
@@ -50,36 +43,35 @@
 .foodCard {
   padding: 24px;
   box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
-  position: relative;
   margin: 5px 0;
   border-radius: 8px;
   position: relative;
 }
 
-.image-container {
+.imageContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 200px;
   padding:30px 20px;
 }
-.image-container img{
+.imageContainer img{
   width: 100%;
 }
 
-.card-body {
+.cardBody {
   text-align: center;
 }
 
-.card-body p:nth-child(2) {
+.cardBody p:nth-child(2) {
   font-size: 13px;
   font-weight: 300;
 }
-.card-body p:last-child {
+.cardBody p:last-child {
   font-weight: 500;
   font-size: 13px;
 }
-.card-body button {
+.cardBody button {
   margin-top: 25px;
 }
 /* ---------food Card related styles ends---------- */

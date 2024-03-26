@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
-const Category = ({ foodItem }) => {
+const Category = ({ foodItem, styles }) => {
     return (
         <Swiper
             slidesPerView={4}
@@ -37,21 +37,21 @@ const Category = ({ foodItem }) => {
                 clickable: true,
             }}
             modules={[Pagination, Navigation]}
-            className="mySwiper"
+            className={styles.mySwiper}
         >
             {
                 foodItem?.map((item, idx) => (
-                    <SwiperSlide className='foodCard' key={idx}>
-                        <div className='image-container'>
+                    <SwiperSlide className={styles.foodCard} key={idx}>
+                        <div className={styles.imageContainer}>
                             <img src={item.image} alt="food image" />
                         </div>
-                        <div className='card-body'>
+                        <div className={styles.cardBody}>
                             <h3>{item.itemName}</h3>
                             <p>{item.chef}</p>
                             <p>${item.price}</p>
                             <button className='btn'>Add to cart</button>
                         </div>
-                        <div className="ribbon">
+                        <div className={styles.ribbon}>
                             <MdOutlineStarPurple500 />
                             <p>{item.rating}</p>
                             </div>
