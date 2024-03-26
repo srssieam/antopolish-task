@@ -5,8 +5,11 @@ import { ImFacebook2, ImTwitter, ImInstagram, ImYoutube } from "react-icons/im";
 const Footer = () => {
     return (
         <div className={styles.footerBody}>
+            <div className={`${styles.footerHeading}`}>
+                    <h1>Taste now</h1>
+            </div>
             <div className={`container ${styles.footerContainer}`}>
-                <div className={styles.gridItem}>
+                <div className={`${styles.gridItem} ${styles.hidden}`}>
                     <h1>Taste now</h1>
                     <div className={styles.footerIcons}>
                         <ImFacebook2 />
