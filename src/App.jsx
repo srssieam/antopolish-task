@@ -2,18 +2,20 @@
 import './App.css'
 import Banner from './components/banner/Banner'
 import Categories from './components/categories/Categories'
+import Footer from './components/footer/Footer'
 import Navbar from './components/header/Navbar'
 import KnowUs from './components/knowUs/KnowUs'
 
 function App() {
 
   return (
-    <div className='container'>
+    <div >
+
       <header>
         <Navbar />
       </header>
-      
-      <main>
+
+      <main className='container'>
         <section>
           <Banner />
           <div className='banner-curveBg'></div>
@@ -27,7 +29,7 @@ function App() {
       </main>
 
       <footer>
-        
+        <Footer />
       </footer>
 
     </div>

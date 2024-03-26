@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
 
 /* header starts from here */
 .header {
     width:100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
     padding: 25px 0px;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
 }
 
 .logoTitle {
